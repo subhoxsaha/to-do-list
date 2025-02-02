@@ -10,7 +10,6 @@ const cookieParser = require("cookie-parser");
 // ......................................//
 
 const User = require("./models/User.model");
-const Todo = require("./models/Todo.model");
 const TodoModel = require("./models/Data.model");
 
 mongoose.connect(`${process.env.DB_URL}`)
