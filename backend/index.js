@@ -134,6 +134,9 @@ app.post('/update',async (req,res)=>{
     res.send('failed to delete')
   }
 })
+app.post('/test',async (req,res)=>{
+   res.send('hello world')
+})
 
 //.....................................//
 
