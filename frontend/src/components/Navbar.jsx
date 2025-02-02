@@ -11,7 +11,7 @@ const Navbar = () => {
    const {user, setUser, setUserId} =useContext(UserContext)
 
   const logout = async () => {
-    await fetch("http://localhost:3000/logout", {
+    await fetch("https://to-do-list-nine-theta-90.vercel.app/logout", {
       method: "POST",
       credentials: "include",
     })
@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/profile", { credentials: "include" })
+    fetch("https://to-do-list-nine-theta-90.vercel.app/profile", { credentials: "include" })
       .then((response) => response.json())
       .then((response) => {
         setUser(response.email)
