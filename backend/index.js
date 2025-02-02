@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -5,10 +6,8 @@ const cors = require("cors");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
-const router = express.Router();
 
 // ......................................//
-require("dotenv").config();
 
 const User = require("./models/User.model");
 const Todo = require("./models/Todo.model");
