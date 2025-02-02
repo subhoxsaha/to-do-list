@@ -140,8 +140,10 @@ app.post('/test',async (req,res)=>{
 
 //.....................................//
 
-app.listen(process.env.PORT, () => {
-  console.log(
-    `App is running on http://localhost:${process.env.PORT} & frontend running on http://localhost:5173`
-  );
-});
+// app.listen(process.env.PORT, () => {
+//   console.log(
+//     `App is running on http://localhost:${process.env.PORT} & frontend running on http://localhost:5173`
+//   );
+// });
+
+module.exports = app;
