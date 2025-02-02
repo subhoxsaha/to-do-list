@@ -20,7 +20,7 @@ const AddTodo = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3000/add",
+      await axios.post("https://to-do-list-nine-theta-90.vercel.app/add",
           { userId, title, content, status},
           { headers: { "Content-Type": "application/json" } }
         )
