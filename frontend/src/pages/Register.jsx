@@ -56,7 +56,7 @@ const Register = () => {
       <Navbar />
       <div className="flex h-full w-screen items-center flex-col justify-center">
         <form
-          className="flex flex-col h-[70%]  mt-10 items-center border-2 border-emerald-950 px-20 py-20 rounded "
+          className="flex flex-col  mt-10 items-center border-2 border-emerald-950 px-20 py-20 rounded "
           onSubmit={handleRegister}
         >
           <h2 className="text-2xl mb-5">Register</h2>
