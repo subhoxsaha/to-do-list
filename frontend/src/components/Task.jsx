@@ -13,7 +13,7 @@ const Task = ({ title, content, date, status, id, setReload, reload }) => {
   useEffect(() => {
     console.log(checked);
     try {
-      axios.post('http://localhost:3000/update',{id, checked})
+      axios.post('https://to-do-list-nine-theta-90.vercel.app/update',{id, checked})
       .then((res)=>{console.log(res.data);
         setReload(!reload)
       })
@@ -34,7 +34,7 @@ const Task = ({ title, content, date, status, id, setReload, reload }) => {
 
   const deleteTodo = () => {
     try {
-      axios.post("http://localhost:3000/delete", { id }).then((Response) => {
+      axios.post("https://to-do-list-nine-theta-90.vercel.app/delete", { id }).then((Response) => {
         console.log(Response.data);
         setReload(!reload);
       });
