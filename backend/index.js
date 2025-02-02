@@ -22,8 +22,7 @@ const saltRounds = 10;
 app.use(cookieParser());
 app.use(
   cors({
-//https://to-do-list-15y6.vercel.app
-    origin: "*",
+    origin: "https://to-do-list-15y6.vercel.app",
     credentials: true,
   })
 );
