@@ -22,12 +22,12 @@ const saltRounds = 10;
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://to-do-list-15y6.vercel.app",
+//https://to-do-list-15y6.vercel.app
+    origin: "*",
     credentials: true,
   })
 );
 app.use(express.json());
-
 //......................................//
 
 app.post("/register", async (req, res) => {
