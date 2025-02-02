@@ -37,7 +37,7 @@ const Register = () => {
 
     //api call..
 
-   await axios.post('http://localhost:3000/register', 
+   await axios.post('https://to-do-list-nine-theta-90.vercel.app/register', 
       { name, email, password }, 
       { headers: { 'Conent-Type': 'application/json' } }
     )
