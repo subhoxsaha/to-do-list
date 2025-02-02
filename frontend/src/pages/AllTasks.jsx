@@ -15,7 +15,7 @@ const AllTasks = () => {
 
   useEffect(() => {
     // Fetch tasks
-    axios.post("http://localhost:3000/getTodo", { userId })
+    axios.post("https://to-do-list-nine-theta-90.vercel.app/getTodo", { userId })
       .then((response) => {
         setTodo(response.data); 
         setLoading(false);
