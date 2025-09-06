@@ -9,11 +9,6 @@ const cookieParser = require("cookie-parser");
 
 // ......................................//
 
-app.use(cors({
-  origin: "https://to-do-list-15y6.vercel.app",  // your frontend URL
-  credentials: true,  // allow cookies/auth headers
-}));
-
 const User = require("./models/User.model");
 const TodoModel = require("./models/Data.model");
 
@@ -25,13 +20,12 @@ const saltRounds = 10;
 //........................................//
 
 app.use(cookieParser());
-app.use(
-  cors({
-    //https://to-do-list-15y6.vercel.app
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
+
+app.use(cors({
+  origin: "https://to-do-list-15y6.vercel.app",  // your frontend URL
+  credentials: true,  // allow cookies/auth headers
+}));
+
 app.use(express.json());
 //......................................//
 
